@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background | Natdanai</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .animated-bg {
+            background: linear-gradient(
+                120deg,
+                #0f172a,
+                #1e3a8a,
+                #6d28d9,
+                #0f172a
+            );
+            background-size: 300% 300%;
+            animation: gradientMove 12s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #c084fc);
+            background-clip: text;              
+            -webkit-background-clip: text;    
+            -webkit-text-fill-color: transparent;
+        }
+
+    </style>
+</head>
+
+<body class="animated-bg text-white selection:bg-blue-500/30">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tight">Natdanai's Website</div>
+            <div class="space-x-8 hidden md:flex text-sm uppercase tracking-wide font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="background.html" class="text-blue-400 border-b-2 border-blue-400">Background</a>
+                <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+                <a href="interests.html" class="hover:text-blue-400 transition">Interests</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="background" class="pt-48 pb-20 px-6 min-h-screen">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="mb-16 text-center">
+                <h2 class="text-5xl font-extrabold mb-4 gradient-text">Background & Activities</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+                <p class="text-white/60 mt-6 text-lg max-w-2xl mx-auto">
+                    Exploring my academic path and the digital activities that shape my skills.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="group p-8 rounded-[2.5rem] glass hover:bg-white/10 hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center mb-6 text-3xl shadow-inner">
+                        💻
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-400 transition">Background</h3>
+                    <p class="text-white/70 leading-relaxed">
+                        I am currently studying computer technology with a strong interest 
+                        in digital business and information systems. I am focused on developing 
+                        my skills in programming, data management, and modern business applications.
+                    </p>
+                </div>
+
+                <div class="group p-8 rounded-[2.5rem] glass hover:bg-white/10 hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-14 h-14 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center mb-6 text-3xl shadow-inner">
+                        📚
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-purple-400 transition">Activities</h3>
+                    <ul class="text-white/70 leading-relaxed space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-purple-400 mr-2">•</span> Group projects in Business Computer courses
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-400 mr-2">•</span> Basic web development (HTML, CSS, Tailwind)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-400 mr-2">•</span> Database Architecture study
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-400 mr-2">•</span> Constant self-learning via online resources
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-24 flex flex-col md:flex-row justify-between items-center gap-6">
+                <a href="index.html" class="flex items-center text-white/50 hover:text-white transition-all font-semibold group">
+                    <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center mr-3 group-hover:border-white group-hover:-translate-x-1 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                    Previous: Home
+                </a>
+
+                <a href="education.html"
+                   class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-xl shadow-blue-500/20">
+                    Next: Education
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-white/30 border-t border-white/5">
+        <p>© 2026 Created by Natdanai Phothong</p>
+    </footer>
+
+</body>
+</html>

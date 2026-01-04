@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Natdanai</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .animated-bg {
+            background: linear-gradient(
+                120deg,
+                #0f172a,
+                #1e3a8a,
+                #6d28d9,
+                #0f172a
+            );
+            background-size: 300% 300%;
+            animation: gradientMove 12s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #c084fc);
+            background-clip: text;              
+            -webkit-background-clip: text;    
+            -webkit-text-fill-color: transparent;
+        }
+
+    </style>
+</head>
+
+<body class="animated-bg text-white selection:bg-blue-500/30">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tight">Natdanai's Website</div>
+            <div class="space-x-8 hidden md:flex text-sm uppercase tracking-wide font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="background.html" class="hover:text-blue-400 transition">Background</a>
+                <a href="education.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Education</a>
+                <a href="interests.html" class="hover:text-blue-400 transition">Interests</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="education" class="pt-48 pb-20 px-6 min-h-screen">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="mb-16 text-center">
+                <h2 class="text-5xl font-extrabold mb-4 gradient-text">Education</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+                <p class="text-white/60 mt-6 text-lg">My Education History</p>
+            </div>
+
+            <div class="relative border-l-2 border-white/20 ml-4 md:ml-10">
+                
+                <div class="mb-12 ml-8 relative group">
+                    <span class="absolute -left-[41px] top-1 w-6 h-6 bg-slate-900 border-4 border-blue-500 rounded-full group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(59,130,246,0.5)]"></span>
+                    
+                    <div class="glass p-8 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 group-hover:-translate-y-1">
+                        <span class="text-xs font-bold text-blue-400 bg-blue-500/10 px-4 py-1.5 rounded-full uppercase tracking-widest">2024 - Present</span>
+                        <h3 class="text-2xl font-bold mt-4 group-hover:text-blue-400 transition">King Mongkut's University Of Technology North Bangkok</h3>
+                        <p class="text-lg font-medium text-white/80 mt-1">Bangkok</p>
+                        <p class="text-white/60 mt-4 leading-relaxed">
+                            I am currently studying in the Faculty of Industrial Education, majoring in Computer Technology.
+                        </p>
+                        
+                        <div class="mt-8">
+                            <a href="https://www.kmutnb.ac.th/?lang=en-gb" target="_blank" 
+                               class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-bold rounded-xl hover:shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:-translate-y-0.5 transition-all">
+                                Visit University Website
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 ml-8 relative group">
+                    <span class="absolute -left-[41px] top-1 w-6 h-6 bg-slate-900 border-4 border-white/30 rounded-full group-hover:border-purple-500 group-hover:scale-125 transition-all shadow-[0_0_15px_rgba(192,132,252,0.3)]"></span>
+                    
+                    <div class="glass p-8 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 group-hover:-translate-y-1">
+                        <span class="text-xs font-bold text-white/40 bg-white/5 px-4 py-1.5 rounded-full uppercase tracking-widest">2017 - 2022</span>
+                        <h3 class="text-2xl font-bold mt-4 group-hover:text-purple-400 transition">Uthaiwitthayakhom School</h3>
+                        <p class="text-lg font-medium text-white/80 mt-1">Uthai Thani</p>
+                        <p class="text-white/60 mt-4 leading-relaxed">
+                            I'm studied Business Computer.
+                        </p>
+
+                        <div class="mt-8">
+                            <a href="https://www.utw.ac.th/" target="_blank" 
+                               class="inline-flex items-center px-6 py-3 border border-white/20 text-white text-sm font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all">
+                                Visit School Website
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12 ml-8 relative group">
+                    <span class="absolute -left-[41px] top-1 w-6 h-6 bg-slate-900 border-4 border-white/30 rounded-full group-hover:border-purple-500 group-hover:scale-125 transition-all shadow-[0_0_15px_rgba(192,132,252,0.3)]"></span>
+                    
+                    <div class="glass p-8 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 group-hover:-translate-y-1">
+                        <span class="text-xs font-bold text-white/40 bg-white/5 px-4 py-1.5 rounded-full uppercase tracking-widest">2007 - 2016</span>
+                        <h3 class="text-2xl font-bold mt-4 group-hover:text-purple-400 transition">Anubanmuanguthaithani School</h3>
+                        <p class="text-lg font-medium text-white/80 mt-1">Uthai Thani</p>
+                        <p class="text-white/60 mt-4 leading-relaxed">
+    
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-24 flex flex-col md:flex-row justify-between items-center gap-6">
+                <a href="background.html" class="flex items-center text-white/50 hover:text-white transition-all font-semibold group">
+                    <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center mr-3 group-hover:border-white group-hover:-translate-x-1 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                    Previous: Background
+                </a>
+                <a href="interests.html" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-xl shadow-blue-500/20">
+                    Next: Interests
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-white/30 border-t border-white/5">
+        <p>© 2026 Created by Natdanai Phothong</p>
+    </footer>
+
+</body>
+</html>
